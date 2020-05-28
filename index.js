@@ -257,7 +257,7 @@ var vueTouchEvents = {
             return $el.$$touchObj;
         }
 
-        Vue.directive(directiveName, {
+        Vue.directive(globalOptions.directiveName, {
             bind: function ($el, binding) {
                 // build a touch configuration object
                 var $this = buildTouchObj($el);
